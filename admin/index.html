@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="Css/styles.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script type="text/javascript" src="Scripts/app.js"></script>
+    <script type="text/javascript" src="Scripts/routes.js"></script>
+    <script type="text/javascript" src="Scripts/Controllers/homeCtrl.js"></script>
+    <script type="text/javascript" src="Scripts/Utils/angular-ui-router.js"></script>
+</head>
+<body ng-app="qhostel">
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Qhostel - admin</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="../navbar-fixed-top/">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#" ui-sref="home">Inicio</a></li>
+                    <li><a href="#" ui-sref="nosotros">Nosotros</a></li>
+                    <li><a href="#" ui-sref="tarifas">Tarifas</a></li>
+                    <li><a href="#" ui-sref="promociones">Promociones</a></li>
+                    <li><a href="#" ui-sref="bar">QLounge Bar</a></li>
+                    <li><a href="#" ui-sref="contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <div ui-view></div>
+            </div>
+        </div>        
+    </div>
+</body>
+</html>

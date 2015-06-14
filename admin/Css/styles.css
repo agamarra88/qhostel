@@ -1,0 +1,9 @@
+﻿.container 
+{
+    margin-top: 20px;
+}
+.bs-example {
+    border: 1px solid #EFE4E8;
+    padding: 21px;
+    border-radius: 7px;
+}
